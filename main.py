@@ -1,5 +1,4 @@
- from datetime import datetime
-from pathlib import Path
+from datetime import datetime
 import random
 
 CHANNEL_NAME = "Jesus Speaks Daily"
@@ -84,20 +83,7 @@ Subscribe to Jesus Speaks Daily for more Bible-based encouragement.
 May God bless you and keep you today.
 """
 
-    output = Path("output")
-    output.mkdir(exist_ok=True)
-
-    filename = output / f"daily_message_{today}.txt"
-    filename.write_text(script.strip() + "\n", encoding="utf-8")
-
-    print("=" * 40)
-    print(CHANNEL_NAME)
-    print("Daily Christian script generated!")
-    print(f"Date: {today}")
-    print(f"Title: {message['title']}")
-    print(f"Bible verse: {message['verse']}")
-    print(f"Saved to: {filename}")
-    print("=" * 40)
+    print(script)
 
 
 if __name__ == "__main__":
