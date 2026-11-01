@@ -26,6 +26,8 @@ jobs:
 
       - name: Run Python program
         run: python main.py
+        env:
+          POSTWIRE_API_KEY: ${{ secrets.POSTWIRE_API_KEY }}
       - name: Upload generated videos
         uses: actions/upload-artifact@v4
         with:
