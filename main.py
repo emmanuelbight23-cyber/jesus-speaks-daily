@@ -245,6 +245,8 @@ async def create_voiceover(text, audio_path):
         voice="en-US-JennyNeural",
         rate="+0%",
     )
+    await voice.save(str(audio_path))
+
 def post_video_to_youtube(video_path, title, description):
     api_key = os.getenv("POSTWIRE_API_KEY")
 
@@ -332,8 +334,7 @@ def post_video_to_youtube(video_path, title, description):
     except Exception as error:
         print(f"POSTWIRE PUBLISHING ERROR: {error}")
         raise
-    await voice.save(str(audio_path))
-
+    
 
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
