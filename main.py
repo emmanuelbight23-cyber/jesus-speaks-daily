@@ -309,7 +309,7 @@ def post_video_to_youtube(video_path, title, description):
             "options": {
                 "youtube": {
                     "title": title[:100],
-                    "privacy": "unlisted",
+                   "privacy": "public",
                 }
             },
         }
