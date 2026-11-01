@@ -2,6 +2,11 @@ import asyncio
 import random
 from datetime import datetime
 from pathlib import Path
+import os
+import json
+import urllib.request
+import urllib.error
+import urllib.parse
 from PIL import Image, ImageDraw, ImageFont
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip
@@ -240,7 +245,93 @@ async def create_voiceover(text, audio_path):
         voice="en-US-JennyNeural",
         rate="+0%",
     )
+def post_video_to_youtube(video_path, title, description):
+    api_key = os.getenv("POSTWIRE_API_KEY")
 
+    if not api_key:
+        print("POSTWIRE_API_KEY is missing. Skipping publishing.")
+        return
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+
+    try:
+        size_bytes = os.path.getsize(video_path)
+
+        upload_request = urllib.request.Request(
+            "https://postwire.io/api/media/upload-url",
+            data=json.dumps({
+                "content_type": "video/mp4",
+                "size_bytes": size_bytes,
+            }).encode("utf-8"),
+            headers=headers,
+            method="POST",
+        )
+
+        with urllib.request.urlopen(upload_request, timeout=60) as response:
+            upload_info = json.loads(response.read().decode("utf-8"))
+
+        with open(video_path, "rb") as video_file:
+            video_bytes = video_file.read()
+
+        put_request = urllib.request.Request(
+            upload_info["upload_url"],
+            data=video_bytes,
+            headers={"Content-Type": "video/mp4"},
+            method="PUT",
+        )
+
+        with urllib.request.urlopen(put_request, timeout=120) as response:
+            response.read()
+
+        finalize_url = (
+            "https://postwire.io/api/media/finalize?"
+            + urllib.parse.urlencode({"path": upload_info["path"]})
+        )
+
+        finalize_request = urllib.request.Request(
+            finalize_url,
+            headers={"Authorization": f"Bearer {api_key}"},
+            method="GET",
+        )
+
+        with urllib.request.urlopen(finalize_request, timeout=60) as response:
+            media_info = json.loads(response.read().decode("utf-8"))
+
+        post_data = {
+            "platforms": ["youtube"],
+            "video_url": media_info["media_url"],
+            "text": description,
+            "options": {
+                "youtube": {
+                    "title": title[:100],
+                    "privacy": "unlisted",
+                }
+            },
+        }
+
+        post_request = urllib.request.Request(
+            "https://postwire.io/api/post",
+            data=json.dumps(post_data).encode("utf-8"),
+            headers=headers,
+            method="POST",
+        )
+
+        with urllib.request.urlopen(post_request, timeout=300) as response:
+            result = json.loads(response.read().decode("utf-8"))
+
+        print("POSTWIRE RESPONSE:", json.dumps(result))
+
+    except urllib.error.HTTPError as error:
+        details = error.read().decode("utf-8", errors="replace")
+        print(f"POSTWIRE HTTP ERROR {error.code}: {details}")
+        raise
+
+    except Exception as error:
+        print(f"POSTWIRE PUBLISHING ERROR: {error}")
+        raise
     await voice.save(str(audio_path))
 
 
@@ -292,7 +383,16 @@ def main():
     audio.close()
 
     print(f"VIDEO CREATED SUCCESSFULLY: {video_path}")
-
+    post_video_to_youtube(
+        video_path,
+        f"{message['title']} | {message['verse']}",
+        (
+            f"{message['message']}\n\n"
+            f"Verse: {message['verse']}\n\n"
+            f"Prayer: {message['prayer']}\n\n"
+            "Subscribe to Jesus Speaks Daily for daily encouragement."
+        ),
+    )
 
 if __name__ == "__main__":
     main()
