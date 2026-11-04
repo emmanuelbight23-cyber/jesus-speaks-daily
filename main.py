@@ -502,8 +502,8 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Rotate messages daily.
-day_number = datetime.strptime(today, "%Y-%m-%d").timetuple().tm_yday
-message = MESSAGES[(day_number - 1) % len(MESSAGES)]
+    day_number = datetime.strptime(today, "%Y-%m-%d").timetuple().tm_yday
+    message = MESSAGES[(day_number - 1) % len(MESSAGES)]
     narration = (
         f"Welcome to {CHANNEL_NAME}. "
         f"Today's message is: {message['title']}. "
