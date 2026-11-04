@@ -70,6 +70,168 @@ MESSAGES = [
             "trust You. In Jesus' name, Amen."
         ),
     },
+    {
+        "title": "Trust God's Timing",
+        "verse": "Ecclesiastes 3:11",
+        "message": "Do not let waiting steal your peace. God can work through seasons you do not understand. Keep praying, preparing, and doing what is right. Your story is not over.",
+        "prayer": "Father, help me trust Your timing. Give me patience and wisdom. In Jesus' name, Amen."
+    },
+    {
+        "title": "You Are Never Alone",
+        "verse": "Deuteronomy 31:8",
+        "message": "Even when you feel alone, remember that God promises to go before His people. Take courage and face today with hope. You do not have to carry every burden alone.",
+        "prayer": "Lord, remind me that You are with me. Give me courage and guide my steps. Amen."
+    },
+    {
+        "title": "Peace in the Storm",
+        "verse": "John 14:27",
+        "message": "Trouble around you does not have to control your heart. Jesus offers a peace deeper than your circumstances. Pause, pray, and take the next wise step.",
+        "prayer": "Jesus, calm my heart and teach me to rest in Your peace. Amen."
+    },
+    {
+        "title": "God Gives Wisdom",
+        "verse": "James 1:5",
+        "message": "When you do not know what decision to make, ask God for wisdom. Pray, seek good counsel, and choose what is right. You do not need to have every answer today.",
+        "prayer": "Father, give me wisdom for every decision. Guide my choices. In Jesus' name, Amen."
+    },
+    {
+        "title": "Do Not Grow Weary",
+        "verse": "Galatians 6:9",
+        "message": "Do not give up on doing good because results are slow. Keep showing kindness, working honestly, and planting good seeds. Small faithful steps matter.",
+        "prayer": "Lord, renew my strength and help me remain faithful. Amen."
+    },
+    {
+        "title": "The Lord Is Your Shepherd",
+        "verse": "Psalm 23:1",
+        "message": "God cares for you and guides you. When the road ahead feels uncertain, trust Him to lead you. You are not forgotten, and you can seek His direction every day.",
+        "prayer": "Good Shepherd, lead me in the right path and help me trust Your care. Amen."
+    },
+    {
+        "title": "Be Strong and Courageous",
+        "verse": "Joshua 1:9",
+        "message": "Courage does not mean you never feel afraid. It means you keep moving toward what is right while trusting God. Face today's responsibilities one step at a time.",
+        "prayer": "Lord, make me strong and courageous. Guide me through today's challenges. Amen."
+    },
+    {
+        "title": "Your Hope Is in God",
+        "verse": "Romans 15:13",
+        "message": "Hope is more than wishing everything will be easy. Trust that God can sustain you through every season. Keep praying, loving, and believing.",
+        "prayer": "God of hope, fill my heart with joy, peace, and faith. Amen."
+    },
+    {
+        "title": "Let Your Light Shine",
+        "verse": "Matthew 5:16",
+        "message": "Your actions can point others toward goodness. A patient response, an honest choice, or a kind word can make a difference. Let your life reflect God's love.",
+        "prayer": "Father, let my words and actions reflect Your goodness today. Amen."
+    },
+    {
+        "title": "Cast Your Worries on God",
+        "verse": "1 Peter 5:7",
+        "message": "You do not have to carry every worry alone. Bring your anxieties to God in prayer. Focus on the next wise step and remember that He cares for you.",
+        "prayer": "Father, I bring my worries to You. Help me trust You and act wisely. Amen."
+    },
+        {
+        "title": "Mercy Is New Every Morning",
+        "verse": "Lamentations 3:22-23",
+        "message": "Yesterday does not have to define today. God's mercy is new every morning. Learn from your mistakes, begin again, and walk forward with faith.",
+        "prayer": "Lord, thank You for fresh mercy. Help me live today with gratitude. Amen."
+    },
+    {
+        "title": "Walk by Faith",
+        "verse": "2 Corinthians 5:7",
+        "message": "You may not see the whole road ahead, but you can trust God while taking responsible steps today. Do not let uncertainty stop you from moving forward.",
+        "prayer": "Father, strengthen my faith and guide my steps. Amen."
+    },
+    {
+        "title": "Love One Another",
+        "verse": "John 13:34-35",
+        "message": "Show love through patience, kindness, forgiveness, and honesty. Your actions can make someone's day brighter. Let Christ's love guide your behaviour.",
+        "prayer": "Jesus, teach me to love others with patience and kindness. Amen."
+    },
+    {
+        "title": "God Is Our Refuge",
+        "verse": "Psalm 46:1",
+        "message": "When life feels unstable, remember that God is your refuge and strength. Turn to Him in prayer and face each challenge one step at a time.",
+        "prayer": "God, be my refuge and give me strength today. Amen."
+    },
+    {
+        "title": "Commit Your Plans to God",
+        "verse": "Proverbs 16:3",
+        "message": "Bring your plans before God. Work diligently, make wise decisions, and remain willing to learn. Let honesty and faith guide your ambitions.",
+        "prayer": "Father, direct my plans and bless the work of my hands. Amen."
+    },
+    {
+        "title": "God Will Never Forsake You",
+        "verse": "Hebrews 13:5",
+        "message": "Whatever season you are facing, remember God's promise to remain with His people. Keep your heart encouraged and continue walking in faith.",
+        "prayer": "Lord, help me remember Your presence and trust Your promises. Amen."
+    },
+    {
+        "title": "Be Still and Know God",
+        "verse": "Psalm 46:10",
+        "message": "Sometimes the best thing you can do is pause, pray, and remember who God is. Do not let the noise around you steal your time with Him.",
+        "prayer": "Father, quiet my heart and help me draw closer to You. Amen."
+    },
+    {
+        "title": "A Heart of Gratitude",
+        "verse": "1 Thessalonians 5:18",
+        "message": "Even on difficult days, there are reasons to thank God. Gratitude helps you recognise His goodness in ordinary moments. Never stop giving thanks.",
+        "prayer": "Lord, give me a grateful heart in every season. Amen."
+    },
+    {
+        "title": "God Can Make a Way",
+        "verse": "Isaiah 43:19",
+        "message": "A closed door does not mean your journey is over. Stay prayerful, remain wise, and be open to new opportunities. God can bring hope into unexpected places.",
+        "prayer": "Father, guide me into the opportunities You have prepared. Amen."
+    },
+    {
+        "title": "Seek God First",
+        "verse": "Matthew 6:33",
+        "message": "Put God at the centre of your decisions, ambitions, and relationships. Let His wisdom shape your priorities as you work toward your goals.",
+        "prayer": "Lord, help me seek Your kingdom first in everything I do. Amen."
+    },
+        {
+        "title": "The Joy of the Lord",
+        "verse": "Nehemiah 8:10",
+        "message": "Your strength does not depend only on how easy life feels. Find joy in God's goodness and let His promises encourage you through difficult moments.",
+        "prayer": "Lord, restore my joy and strengthen my heart. Amen."
+    },
+    {
+        "title": "God Hears Your Prayers",
+        "verse": "1 John 5:14",
+        "message": "Never underestimate the value of sincere prayer. Bring your needs, fears, and hopes before God. Trust Him as you wait and continue doing what is right.",
+        "prayer": "Father, thank You for hearing me. Help me trust Your wisdom. Amen."
+    },
+    {
+        "title": "Forgive as Christ Forgave",
+        "verse": "Ephesians 4:32",
+        "message": "Forgiveness can be difficult, but bitterness can weigh heavily on your heart. Ask God to help you release resentment and respond with grace and wisdom.",
+        "prayer": "Jesus, give me a forgiving heart and help me walk in love. Amen."
+    },
+    {
+        "title": "You Are God's Workmanship",
+        "verse": "Ephesians 2:10",
+        "message": "Your life has purpose. Use your gifts to serve others, make a positive difference, and honour God through the work you do today.",
+        "prayer": "Father, help me discover and fulfil the good purpose You have for my life. Amen."
+    },
+    {
+        "title": "Wait on the Lord",
+        "verse": "Isaiah 40:31",
+        "message": "Waiting can be difficult, but do not allow impatience to make you lose hope. Keep trusting God, renewing your strength, and taking faithful steps.",
+        "prayer": "Lord, renew my strength as I wait on You. Amen."
+    },
+    {
+        "title": "Walk in God's Love",
+        "verse": "1 John 4:19",
+        "message": "God's love gives us a reason to love others. Let compassion guide your words, let kindness guide your actions, and let your life reflect Christ.",
+        "prayer": "Father, help me share Your love wherever I go. Amen."
+    },
+    {
+        "title": "The Lord Is Faithful",
+        "verse": "2 Thessalonians 3:3",
+        "message": "Circumstances may change, but God's faithfulness remains. Hold on to your faith, stand firm in His promises, and keep moving forward with hope.",
+        "prayer": "Faithful God, strengthen my heart and keep me steadfast. Amen."
+    },
 ]
 
 
@@ -339,10 +501,9 @@ def post_video_to_youtube(video_path, title, description):
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
 
-    # Use the date to keep the same message for the same day.
-    random.seed(today)
-    message = random.choice(MESSAGES)
-
+    # Rotate messages daily.
+day_number = datetime.strptime(today, "%Y-%m-%d").timetuple().tm_yday
+message = MESSAGES[(day_number - 1) % len(MESSAGES)]
     narration = (
         f"Welcome to {CHANNEL_NAME}. "
         f"Today's message is: {message['title']}. "
